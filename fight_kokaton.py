@@ -146,7 +146,7 @@ class Score:
         self.color = (0, 0, 255)
         self.score = 0
         self.img = self.fonto.render("スコア：", 0, )
-        self.
+        self
 
 def main():
     pg.display.set_caption("たたかえ！こうかとん")
@@ -154,7 +154,7 @@ def main():
     bg_img = pg.image.load("fig/pg_bg.jpg")
     bird = Bird((300, 200))
     beam = None
-    # bomb = Bomb((255, 0, 0), 10)
+    bomb = Bomb((255, 0, 0), 10)
     bombs = [Bomb((255, 0, 0), 10) for _ in range(NUM_OF_BOMBS)]
     clock = pg.time.Clock()
     tmr = 0
